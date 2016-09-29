@@ -23,12 +23,15 @@ title: Vessel Overview
     </div>
   </div>
 
-  <div id="button-panel">
-    <%= render 'button', :button_id => "rcs", :button_label => "RCS" %>
-    <%= render 'button', :button_id => "sas", :button_label => "SAS" %>
-  </div>
+  <%= render 'camera' %>
 
-  <table id="orbital-data" class="readout-display readout-table"></table>
+  <div id='orbital-data-and-buttons'>
+    <table id="orbital-data" class="readout-display readout-table"></table>
+    <div id="button-panel">
+      <%= render 'button', :button_id => "rcs", :button_label => "RCS" %>
+      <%= render 'button', :button_id => "sas", :button_label => "SAS" %>
+    </div>
+  </div>
 </div>
 
 <div id="ground-track-wrapper">
@@ -119,4 +122,12 @@ title: Vessel Overview
       formatter: function(value){ return DataFormatters.velocityString(value) }
     },
   ])
+
+  window.cameraFeed = new CameraFeed(window.datalink, {
+    cameraList: $('camera-list'),
+    cameraListContainer: $('camera-selector-container'),
+    showCameraList: $('show-camera-list'),
+    cameraName: $('camera-name'),
+    cameraImage: $('camera-image')
+  })
 <% end %>

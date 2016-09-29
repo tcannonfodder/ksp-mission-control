@@ -40,7 +40,7 @@
   transform-origin: left;
 }
 
-#ground-track-wrapper{
+#ground-track-wrapper, #map-and-camera-wrapper{
   margin-bottom: 10px;
 
   display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
@@ -54,9 +54,17 @@
 }
 
 
-#orbital-map-container{
-  width:50%;
-  flex-grow: 1;
+#orbital-map-and-camera-container-test{
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display:-webkit-flex;
+  display:-webkit-flexbox;
+  display:-ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+
+  flex: 1;
   position: relative;
 }
 
@@ -68,6 +76,8 @@
 #orbital-map-container{
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
+  max-width: 50%;
 }
 
 #orbital-map{
@@ -84,4 +94,21 @@
 
 #orbital-map-container .dg.main input{
   font-family: sans-serif;
+}
+
+.camera{
+  height: 250px;
+  width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.camera .readout-display{
+  min-height: 200px;
+  min-width: 200px;
+}
+
+.camera .camera-image-wrapper, #camera-image{
+  width: 150px;
+  height: 150px;
 }

@@ -116,6 +116,22 @@ var Telemachus = Class.create({
     })
   },
 
+  cameraURL: function(){
+    return "http://" + this.host + ":" + this.port + "/telemachus/cameras"
+  },
+
+  getCameraList: function(callback){
+    new Ajax.Request(this.cameraURL(), {
+      method: "get",
+      // parameters: params,
+      onSuccess: function(response){
+        var data = JSON.parse(response.responseText)
+        callback(data)
+      }.bind(this),
+      onException: this.notifyIfLOS.bind(this)
+    })
+  },
+
   getOrbitalBodies: function(){
     return {
       "Sun" : {

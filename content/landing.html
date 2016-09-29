@@ -42,8 +42,11 @@ title: Landing Module
   </div>
 </div>
 
-<div class="readout-display">
-  <%= render 'altitude_tracker_chart' %>
+<div id="bottom-panel">
+  <%= render 'camera' %>
+  <div class="readout-display">
+    <%= render 'altitude_tracker_chart' %>
+  </div>
 </div>
 
 <% content_for :dom_loaded do %>
@@ -100,4 +103,12 @@ title: Landing Module
       formatter: function(value){ return DataFormatters.velocityString(value) }
     },
   ])
+
+  window.cameraFeed = new CameraFeed(window.datalink, {
+    cameraList: $('camera-list'),
+    cameraListContainer: $('camera-selector-container'),
+    showCameraList: $('show-camera-list'),
+    cameraName: $('camera-name'),
+    cameraImage: $('camera-image')
+  })
 <% end %>

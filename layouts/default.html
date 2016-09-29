@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" type="text/css" href="../assets/stylesheets/chartist.min.css" />
   <link rel="stylesheet" type="text/css" href="../assets/stylesheets/leafletksp.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/camera_module.css" />
   <link rel="stylesheet" type="text/css" href="../assets/stylesheets/application.css" />
 
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../assets/icons/<%= @item.identifier %>/apple-touch-icon-57x57.png" />
@@ -84,6 +85,9 @@
             <%= render 'nav_item', :nav_item => 'ground-track', :nav_title => "Ground Track", :nav_url => '../ground-track/index.html' %>
             <%= render 'nav_item', :nav_item => 'map', :nav_title => "Orbital Map", :nav_url => '../3dmap/index.html' %>
             <%= render 'nav_item', :nav_item => 'mission-wall', :nav_title => "Mission Wall", :nav_url => '../mission-wall/index.html' %>
+
+            <%= render 'nav_item', :nav_item => 'camera', :nav_title => "Camera Feed", :nav_url => '../camera/index.html' %>
+
             <%= render 'nav_item', :nav_item => 'staging-analysis', :nav_title => "Staging Analysis", :nav_url => '../staging-analysis/index.html' %>
             <%= render 'nav_item', :nav_title => "Telemachus Console", :nav_url => '/telemachus/console.html', :id => 'telemachus-console', :nav_item => "telemachus", :image_name => "telemachus-preview.png" %>
 

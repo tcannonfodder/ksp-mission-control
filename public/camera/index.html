@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Camera Feed</title>
+  
+  
+    <script src="../assets/camera.js"></script>
+  
+
+  <script src="../assets/js/action_button.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/chartist.min.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/leafletksp.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/camera_module.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/application.css" />
+
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../assets/icons//camera//apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/icons//camera//apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/icons//camera//apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/icons//camera//apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../assets/icons//camera//apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../assets/icons//camera//apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../assets/icons//camera//apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../assets/icons//camera//apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="../assets/icons//camera//favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="../assets/icons//camera//favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="../assets/icons//camera//favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="../assets/icons//camera//favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="../assets/icons//camera//favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="../assets/icons/Camera Feed"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="../assets/icons//camera//mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="../assets/icons//camera//mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="../assets/icons//camera//mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="../assets/icons//camera//mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="../assets/icons//camera//mstile-310x310.png" />
+
+
+  
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/camera.css" />
+
+</head>
+<body>
+  <div id="open-navigation"><a href="#">&darr; Open</a></div>
+  <nav>
+    <div id="close-navigation"><a href="#">&uarr; Close Navigation</a></div>
+
+    <div id="overlay-grid">
+      <figure>
+        <figcaption>FIDO</figcaption>
+        <ul>
+          
+<li id="" class="">
+  <a href="../ascension/index.html">
+    <img src="../assets/images/ascension-preview.svg"/>
+    Ascension
+  </a>
+</li>
+          
+<li id="" class="">
+  <a href="../navigation/index.html">
+    <img src="../assets/images/navigation-preview.svg"/>
+    Navigation
+  </a>
+</li>
+          
+<li id="" class="">
+  <a href="../landing/index.html">
+    <img src="../assets/images/landing-preview.svg"/>
+    Landing
+  </a>
+</li>
+          
+<li id="" class="">
+  <a href="../docking/index.html">
+    <img src="../assets/images/docking-preview.svg"/>
+    Docking
+  </a>
+</li>
+        </ul>
+      </figure>
+
+      <figure>
+        <figcaption>BOOST/EECOM</figcaption>
+        <ul>
+          
+<li id="" class="">
+  <a href="../boost/index.html">
+    <img src="../assets/images/boost-preview.svg"/>
+    BOOST/EECOM
+  </a>
+</li>
+        </ul>
+      </figure>
+
+      <figure>
+        <figcaption>SYSOPS</figcaption>
+        <ul>
+          
+<li id="" class="">
+  <a href="../sysops/index.html">
+    <img src="../assets/images/sysops-preview.svg"/>
+    SYSOPS
+  </a>
+</li>
+          
+<li id="" class="">
+  <a href="../3dmap/index.html">
+    <img src="../assets/images/map-preview.svg"/>
+    Orbital Map
+  </a>
+</li>
+        </ul>
+      </figure>
+
+      <figure>
+        <figcaption>CAPCOM</figcaption>
+        <ul>
+          
+<li id="" class="">
+  <a href="../vessel-overview/index.html">
+    <img src="../assets/images/vessel-overview-preview.svg"/>
+    Vessel Overview
+  </a>
+</li>
+          
+<li id="" class="">
+  <a href="../3dmap/index.html">
+    <img src="../assets/images/map-preview.svg"/>
+    Orbital Map
+  </a>
+</li>
+        </ul>
+      </figure>
+
+      <figure>
+        <figcaption>TOOLS</figcaption>
+          <ul>
+            
+<li id="" class="">
+  <a href="../ground-track/index.html">
+    <img src="../assets/images/ground-track-preview.svg"/>
+    Ground Track
+  </a>
+</li>
+            
+<li id="" class="">
+  <a href="../3dmap/index.html">
+    <img src="../assets/images/map-preview.svg"/>
+    Orbital Map
+  </a>
+</li>
+            
+<li id="" class="">
+  <a href="../mission-wall/index.html">
+    <img src="../assets/images/mission-wall-preview.svg"/>
+    Mission Wall
+  </a>
+</li>
+
+            
+<li id="" class="current">
+  <a href="../camera/index.html">
+    <img src="../assets/images/camera-preview.svg"/>
+    Camera Feed
+  </a>
+</li>
+
+            
+<li id="" class="">
+  <a href="../staging-analysis/index.html">
+    <img src="../assets/images/staging-analysis-preview.svg"/>
+    Staging Analysis
+  </a>
+</li>
+            
+<li id="telemachus-console" class="">
+  <a href="/telemachus/console.html">
+    <img src="../assets/images/telemachus-preview.png"/>
+    Telemachus Console
+  </a>
+</li>
+
+            
+<li id="mkon" class="">
+  <a href="/telemachus/MKON/index.html">
+    <img src="../assets/images/mkon-preview.png"/>
+    MKON
+  </a>
+</li>
+
+            
+<li id="settings-link" class="">
+  <a href="#settings">
+    <img src="../assets/images/settings-preview.svg"/>
+    Settings
+  </a>
+</li>
+          </ul>
+      </figure>
+    </div>
+  </nav>
+
+  <section id="settings_overlay" >
+    <form id="settings">
+      <h2>Settings</h2>
+      <fieldset>
+        <label for="host">Host</label>
+        <input name="host" id="host" type="text" placeholder="localhost"/><br>
+
+        <label for="port">Port</label>
+        <input name="port" id="port" type="text" placeholder="8085"/>
+      </fieldset>
+
+      <button type="submit">Save &amp; Close</button>
+    </form>
+  </section>
+
+  <div id="station">
+    <header id="title-bar">
+      <div id="mission-time-warp-indicator" class="readout-display">
+        <span id="mission-time">T+12:34:14 MET</span>
+      </div>
+
+      <h1>Camera Feed</h1>
+
+      <div id="world-clock" class="readout-display">
+        Year 1, Day 1 00:23:13 UT
+      </div>
+    </header>
+
+    <div id="content">
+      
+
+
+<div id="camera" class="camera gauge">
+  <div class="readout-display">
+    <div id="camera-selector-container" class="camera-selector hidden">
+      <h2>Cameras</h2>
+      <ul id="camera-list" class="camera-list">
+      </ul>
+    </div>
+    <div class="camera-display">
+      <h2 id="camera-name"></h2>
+      <div class='camera-image-wrapper scanlines'>
+        <img id="camera-image"/>
+      </div>
+    </div>
+  </div>
+  <div class="camera-list-button-wrapper">
+    <button id='show-camera-list'>Choose Camera</button>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+
+
+  <script>
+
+  $(document).observe("dom:loaded", function() {
+    window.settings = new Settings(window.location.hostname, window.location.port)
+    $('settings')['host'].value = settings.getHost()
+    $('settings')['port'].value = settings.getPort()
+
+    function updateTelemachusAndMKONLinks(){
+      var baseURL = "http://" + settings.getHost() + ":" + settings.getPort()
+      $('telemachus-console').down('a').href = baseURL + "/telemachus/console.html"
+      $('mkon').down('a').href = baseURL + "/telemachus/MKON/index.html"
+    }
+
+    updateTelemachusAndMKONLinks()
+
+    $('settings-link').observe('click', function(e){
+      e.preventDefault()
+      $('settings_overlay').addClassName('open')
+    })
+
+    $('settings').observe('submit', function(e){
+      e.preventDefault();
+      var form = e.target
+      window.settings.setHost(form['host'].value)
+      window.settings.setPort(form['port'].value)
+
+      window.datalink.updateConnection(
+        window.settings.getHost(),
+        window.settings.getPort()
+      )
+
+      updateTelemachusAndMKONLinks()
+
+      $('settings_overlay').removeClassName('open')
+    })
+
+    window.datalink = new Telemachus(settings.getHost(), settings.getPort())
+    window.titleBar = new TitleBar(datalink, 'title-bar')
+
+    var toggleNavigation = function(e){
+      var nav = $$('nav')[0]
+      nav.toggleClassName('open')
+    }
+
+    $('open-navigation').observe("click", toggleNavigation)
+    $('close-navigation').observe("click", toggleNavigation)
+
+    
+  window.datalink.rate = 1000
+
+  window.cameraFeed = new CameraFeed(window.datalink, {
+    cameraList: $('camera-list'),
+    cameraListContainer: $('camera-selector-container'),
+    showCameraList: $('show-camera-list'),
+    cameraName: $('camera-name'),
+    cameraImage: $('camera-image')
+  })
+
+  })
+
+  </script>
+</body>
+</html>

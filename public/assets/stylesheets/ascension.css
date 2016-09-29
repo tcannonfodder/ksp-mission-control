@@ -69,3 +69,19 @@
   text-align: right;
 }
 
+.camera{
+  height: 250px;
+  width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.camera .readout-display{
+  min-height: 200px;
+  min-width: 200px;
+}
+
+.camera .camera-image-wrapper, #camera-image{
+  width: 160px;
+  height: 160px;
+}

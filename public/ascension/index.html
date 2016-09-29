@@ -11,6 +11,7 @@
 
   <link rel="stylesheet" type="text/css" href="../assets/stylesheets/chartist.min.css" />
   <link rel="stylesheet" type="text/css" href="../assets/stylesheets/leafletksp.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/camera_module.css" />
   <link rel="stylesheet" type="text/css" href="../assets/stylesheets/application.css" />
 
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../assets/icons//ascension//apple-touch-icon-57x57.png" />
@@ -156,6 +157,15 @@
     Mission Wall
   </a>
 </li>
+
+            
+<li id="" class="">
+  <a href="../camera/index.html">
+    <img src="../assets/images/camera-preview.svg"/>
+    Camera Feed
+  </a>
+</li>
+
             
 <li id="" class="">
   <a href="../staging-analysis/index.html">
@@ -292,6 +302,25 @@
   <p>Atmosphere</p>
 </div>
   </div>
+
+  <div id="camera" class="camera gauge">
+  <div class="readout-display">
+    <div id="camera-selector-container" class="camera-selector hidden">
+      <h2>Cameras</h2>
+      <ul id="camera-list" class="camera-list">
+      </ul>
+    </div>
+    <div class="camera-display">
+      <h2 id="camera-name"></h2>
+      <div class='camera-image-wrapper scanlines'>
+        <img id="camera-image"/>
+      </div>
+    </div>
+  </div>
+  <div class="camera-list-button-wrapper">
+    <button id='show-camera-list'>Choose Camera</button>
+  </div>
+</div>
 
   <div id="ascension-data-and-button-panel">
     <table id="ascension-data" class="readout-display readout-table"></table>
@@ -443,6 +472,14 @@
       formatter: function(value){ return DataFormatters.velocityString(value) }
     },
   ])
+
+  window.cameraFeed = new CameraFeed(window.datalink, {
+    cameraList: $('camera-list'),
+    cameraListContainer: $('camera-selector-container'),
+    showCameraList: $('show-camera-list'),
+    cameraName: $('camera-name'),
+    cameraImage: $('camera-image')
+  })
 
   })
 

@@ -1,0 +1,21 @@
+---
+title: Camera Feed
+---
+
+<% content_for :head do %>
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/camera.css" />
+<% end %>
+
+<%= render 'camera' %>
+
+<% content_for :dom_loaded do %>
+  window.datalink.rate = 1000
+
+  window.cameraFeed = new CameraFeed(window.datalink, {
+    cameraList: $('camera-list'),
+    cameraListContainer: $('camera-selector-container'),
+    showCameraList: $('show-camera-list'),
+    cameraName: $('camera-name'),
+    cameraImage: $('camera-image')
+  })
+<% end %>

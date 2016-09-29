@@ -24,6 +24,8 @@ title: Ascension Module
     <%= render 'atmospheric_density' %>
   </div>
 
+  <%= render 'camera' %>
+
   <div id="ascension-data-and-button-panel">
     <table id="ascension-data" class="readout-display readout-table"></table>
 
@@ -115,4 +117,12 @@ title: Ascension Module
       formatter: function(value){ return DataFormatters.velocityString(value) }
     },
   ])
+
+  window.cameraFeed = new CameraFeed(window.datalink, {
+    cameraList: $('camera-list'),
+    cameraListContainer: $('camera-selector-container'),
+    showCameraList: $('show-camera-list'),
+    cameraName: $('camera-name'),
+    cameraImage: $('camera-image')
+  })
 <% end %>

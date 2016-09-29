@@ -10,6 +10,8 @@ title: Docking
   <div id="docking-map-container" class="readout-display">
     <div id="docking-map"></div>
   </div>
+
+  <%= render 'camera' %>
 </div>
 
 <div id="bottom-panel">
@@ -72,5 +74,13 @@ title: Docking
   window.rcsButtonIndicator = new ButtonIndicator(datalink, 'rcs', 'v.rcsValue')
   window.sasButtonIndicator = new ButtonIndicator(datalink, 'sas', 'v.sasValue')
   window.throttleGauge = new ThrottleGauge(window.datalink, 'throttle')
+
+  window.cameraFeed = new CameraFeed(window.datalink, {
+    cameraList: $('camera-list'),
+    cameraListContainer: $('camera-selector-container'),
+    showCameraList: $('show-camera-list'),
+    cameraName: $('camera-name'),
+    cameraImage: $('camera-image')
+  })
 
 <% end %>

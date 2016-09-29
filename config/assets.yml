@@ -101,6 +101,9 @@ javascripts:
     - &maneuver_node_editor
       - static/js/maneuver_node_editor.js
 
+    - &camera_feed
+      - static/js/camera_feed.js
+
   3dmap:
     - *app_core
     - *3d_map
@@ -110,6 +113,7 @@ javascripts:
     - *position_map
     - *navball
     - *altitude_tracker
+    - *camera_feed
 
   boost:
     - *app_core
@@ -118,10 +122,15 @@ javascripts:
     - *burn_planner
     - *staging_info_table
 
+  camera:
+    - *app_core
+    - *camera_feed
+
   docking:
     - *app_core
     - *navball
     - *docking_map
+    - *camera_feed
 
   ground-track:
     - *app_core
@@ -132,11 +141,13 @@ javascripts:
     - *ground_track
     - *navball
     - *altitude_tracker
+    - *camera_feed
 
   mission-wall:
     - *app_core
     - *ground_track
     - *3d_map
+    - *camera_feed
 
   navigation:
     - *app_core
@@ -158,6 +169,7 @@ javascripts:
   vessel-overview:
     - *app_core
     - *ground_track
+    - *camera_feed
 
   app:
     - *app_core
@@ -166,6 +178,7 @@ stylesheets:
   app:
     - static/stylesheets/chartist.min.css
     - static/stylesheets/leafletksp.css
+    - static/stylesheets/camera.css
     - static/stylesheets/application.css
   3dmap:
     - static/stylesheets/3dmap.css

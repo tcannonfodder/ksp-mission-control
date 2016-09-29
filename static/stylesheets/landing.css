@@ -1,4 +1,4 @@
-#top-panel{
+#top-panel, #bottom-panel{
   display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
   display:-webkit-flex;
@@ -10,6 +10,9 @@
   justify-content: space-around;
 }
 
+#bottom-panel div:last-child{
+  flex-grow: 2;
+}
 
 #gt-map-container{
   margin-right: auto;
@@ -75,4 +78,21 @@
 
 #ablator-readout progress{
   width: 100%;
+}
+
+.camera{
+  height: 300px;
+  width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.camera .readout-display{
+  min-height: 200px;
+  min-width: 200px;
+}
+
+.camera .camera-image-wrapper, #camera-image{
+  width: 200px;
+  height: 200px;
 }

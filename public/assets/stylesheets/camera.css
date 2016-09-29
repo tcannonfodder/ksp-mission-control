@@ -1,0 +1,19 @@
+.camera{
+  height: 600px;
+  width: 600px;
+  margin: auto;
+}
+
+.camera .readout-display{
+  min-height: 500px;
+  min-width: 500px;
+}
+
+.camera .camera-image-wrapper, #camera-image{
+  width: 500px;
+  height: 500px;
+}
+
+.scanlines:after {
+  background-size: 100% 3px;
+}

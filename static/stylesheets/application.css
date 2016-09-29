@@ -265,6 +265,10 @@ h1{
   text-align: center;
 }
 
+.gauge .readout-display h2{
+  text-shadow: none;
+}
+
 .readout-display input, .readout-display button, .readout-display select{
   border: 2px solid #FD7E23;
   background-color: #3A1604;

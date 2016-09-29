@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="372px" height="372px" viewBox="0 0 372 372" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>camera-preview</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M232.684685,45.5644613 L232.684685,8.82235214 C232.684685,4.3976661 229.1064,0.81981982 224.692362,0.81981982 L8.4923224,0.81981982 C4.07727723,0.81981982 0.5,4.40267558 0.5,8.82235214 L0.5,163.177648 C0.5,167.602334 4.07828462,171.18018 8.4923224,171.18018 L224.692362,171.18018 C229.107407,171.18018 232.684685,167.597324 232.684685,163.177648 L232.684685,126.43554 C232.731791,126.458438 232.779041,126.480566 232.826427,126.501911 L299.851528,162.39419 C302.971781,164.330481 305.5,158.173513 305.5,148.621812 L305.5,23.3781877 C305.5,13.8193862 302.971093,7.66994859 299.851528,9.60581033 L232.826427,45.4980887 C232.779041,45.5194341 232.731791,45.5415625 232.684685,45.5644613 Z" id="path-1"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="camera-preview">
+            <g id="Camera" transform="translate(33.000000, 100.000000)">
+                <g id="Combined-Shape">
+                    <use fill="#323232" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

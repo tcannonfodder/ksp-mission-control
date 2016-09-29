@@ -14,8 +14,12 @@ title: Mission Wall
   </div>
 </div>
 
-<div id="orbital-map-container" class="readout-display">
-  <div id="orbital-map"></div>
+<div id="orbital-map-and-camera-container-test">
+  <div id="orbital-map-container" class="readout-display">
+    <div id="orbital-map"></div>
+  </div>
+
+  <%= render 'camera' %>
 </div>
 
 <%= render 'orbital_map_shader' %>
@@ -29,4 +33,12 @@ title: Mission Wall
   window.positionDataFormatter = new PositionDataFormatter(orbitalPositionData, window.datalink)
 
   window.OrbitalMap = new OrbitalMap(positionDataFormatter, window.datalink, "orbital-map")
+
+  window.cameraFeed = new CameraFeed(window.datalink, {
+    cameraList: $('camera-list'),
+    cameraListContainer: $('camera-selector-container'),
+    showCameraList: $('show-camera-list'),
+    cameraName: $('camera-name'),
+    cameraImage: $('camera-image')
+  })
 <% end %>
